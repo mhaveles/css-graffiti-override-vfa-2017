@@ -1,1 +1,37 @@
 /* write your override styles here */
+
+/*cleans tag-1 specifiity 101 */
+div .tag-1 {
+  display: none;
+}
+
+/*cleans tag-2 specificity 202*/
+div#wall #tag-2 {
+  display: none;
+}
+
+/*cleans tag 3 spcificity 212*/
+div#wall div#tag-3.slick {
+  display: none;
+}
+
+/*cleans tag 4 specificity 201*/
+#wall div#tag-4{
+  display: none;
+}
+
+/*tag-5 has specificity of 221
+cleans with specficity of 222*/
+div#wall .parent div#tag-5.slick {
+  display: none;
+}
+/*cleans 6 and 7 with specifity of 1000*/
+.parent div {
+  display: none;
+}
+/*tag-6 has specifity of */
+/* gets rid of tags 1,4,5,6,7
+*
+#wall div{
+  display: none;
+}*/
